@@ -1,0 +1,19 @@
+/* global styles*/
+
+body{
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: $main-color;
+  background-color: $second-color;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1270px;
+  padding: 0 15px;
+  border: 1px solid #fff;
+}
+
