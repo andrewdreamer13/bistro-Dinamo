@@ -3,6 +3,7 @@
   // padding: 206px 0 176px 0;
   padding-top: clamp(200px, 12.275rem + 0.96vw, 206px);
   padding-bottom: clamp(150px, 8.4rem + 4.16vw, 176px);
+  // padding-left: 100px;
   background-image: url('../img/hero-bg.jpg');
   background-size: cover;
   background-position: center center;
@@ -46,12 +47,29 @@
   background-color: $third-color;
 }
 
+@media (max-width:1350px) {
+  .hero__inner {
+   padding-left: 100px;
+  }
+}
+
+@media (max-width:768px) {
+  .hero__inner {
+    padding-left: 0;
+    @include flex-mix(flex-start,center, column);
+   }
+
+   .hero__title {
+    text-align: center;
+   
+  }
+}
 
 @media (max-width:375px) {
 
-  .hero__inner {
-    @include flex-mix(flex-start,center, column);
-  }
+  // .hero__inner {
+  //   @include flex-mix(flex-start,center, column);
+  // }
   .hero__title {
     text-align: center;
     font-size: clamp(26px, -0.5972rem + 11.1111vw, 32px);

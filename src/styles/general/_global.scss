@@ -15,11 +15,21 @@ body{
   margin: 0 auto;
   max-width: 1270px;
   padding: 0 10px;
-  //  border: 1px solid #fff;
+  // border: 1px solid #fff;
 }
 
-@media (max-width: 375px) {
+.big-container {
+  width: 100vw;
+}
+
+@media (max-width: 376px) {
   .container {
+    padding: 0 8px;
+  }
+
+  .big-container {
+    width: 100%;
+    margin: 0 auto;
     padding: 0 8px;
   }
 }
