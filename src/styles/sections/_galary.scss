@@ -2,7 +2,7 @@
   width: 100%;
   padding: 143px 0 0 0;
   background-image: url("../img/galary/galary-bg.png");
-  background-size: 258px 223px;
+  // background-size: 258px 223px;
   background-position: 10px 20px;
   background-repeat: no-repeat;
 }
@@ -74,7 +74,7 @@
 @media (max-width: 376px) {
 
   .galary {
-    padding: 50px 0 0 0;
+    padding: 50px 0 43px 0;
     background-image: none;
   }
 

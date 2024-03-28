@@ -9,17 +9,26 @@ body{
   letter-spacing: .5px;
   color: $main-color;
   background-color: $second-color;
+  overflow-x: hidden;
 }
 
 .container {
   margin: 0 auto;
   max-width: 1270px;
   padding: 0 10px;
-  // border: 1px solid #fff;
+  //  border: 1px solid #fff;
 }
 
 .big-container {
   width: 100vw;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.visible {
+  display: block;
 }
 
 @media (max-width: 376px) {

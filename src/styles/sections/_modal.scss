@@ -5,18 +5,18 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 15px;
+  padding: 10px;
   z-index: -50;
   opacity: 0;
   pointer-events: none;
-  transition: .3s;
+  transition: .5s;
   background: rgba($second-color, .3);
   overflow-y: auto;
   overflow-x: hidden;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
 }
 
 .modal-window--visible{
