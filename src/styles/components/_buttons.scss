@@ -16,10 +16,6 @@
     filter: brightness(130%);
     transition: all .3s;
   }
-
-  &:hover::after {
-    width: 100%;
-  }
  
   span {
     position: relative;
@@ -28,6 +24,22 @@
       // letter-spacing: 1px;
      text-transform: uppercase;
     z-index: 2;
+  }
+}
+
+@media (hover:hover) {
+  .button {
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
+
+@media (hover:none) {
+  .button {
+    &:active::after {
+      width: 100%;
+    }
   }
 }
 

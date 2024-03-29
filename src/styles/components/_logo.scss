@@ -1,9 +1,6 @@
 .logo {
  
   &__svg {
-    //  width: 133px;
-    // height: 66px;
-    // width: clamp(111px, 2.3858rem + 9.4828vw, 133px);
     width: clamp(111px ,6.1125rem + 3.52vw, 133px);
     aspect-ratio: 2.1 / 1;
     fill: $main-color;
@@ -12,6 +9,22 @@
 
   &:hover svg {
     fill: $third-color;
+  }
+}
+
+@media (hover:hover) {
+  .logo {
+    &:hover svg {
+      fill: $third-color;
+    }
+  }
+}
+
+@media (hover:none) {
+  .logo {
+    &:active svg {
+      fill: $third-color;
+    }
   }
 }
 

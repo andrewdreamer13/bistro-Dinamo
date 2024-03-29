@@ -41,20 +41,13 @@
     overflow: hidden;
     transition: all 0.3s;
   }
-
-  &:hover {
-    color: transparent;
-  }
-
-  &:hover::after {
-    width: 100%;
-  }
 }
 .header__contacts {
   width: 100%;
   max-width: 363px;
   @include flex-mix(space-between, center, row);
 }
+
 .header__phone {
   max-width: 245px;
   @include flex-mix(center, center, row);
@@ -66,11 +59,6 @@
   height: 20px;
   fill: $main-color;
   transition: all 0.3s;
-
-  .header__phone:hover & {
-    fill: $third-color;
-    animation: dialing 1s linear 0.3s infinite;
-  }
 }
 
 .header__phone-number {
@@ -90,14 +78,6 @@
     overflow: hidden;
     transition: all 0.3s;
   }
-
-  .header__phone:hover & {
-    color: transparent;
-  }
-
-  .header__phone:hover &::after {
-    width: 100%;
-  }
 }
 
 .header__socials {
@@ -116,11 +96,6 @@
   height: 20px;
   fill: $main-color;
   transition: all 0.3s;
-
-  .header__social-link:hover & {
-    fill: $third-color;
-    animation: dialing 1s linear 0.3s infinite;
-  }
 }
 
 @keyframes dialing {
@@ -171,6 +146,80 @@
 
 .burger__span-three {
   top: 100%;
+}
+
+
+@media (hover:hover) {
+  .nav__link {
+    &:hover {
+      color: transparent;
+    }
+  
+    &:hover::after {
+      width: 100%;
+    }
+  }
+
+  .header__phone-number {
+    .header__phone:hover & {
+      color: transparent;
+    }
+  
+    .header__phone:hover &::after {
+      width: 100%;
+    }
+  }
+
+  .header__phone-svg {
+    .header__phone:hover & {
+      fill: $third-color;
+      animation: dialing 1s linear 0.3s infinite;
+    }
+  }
+
+  .header__social-svg {
+    .header__social-link:hover & {
+      fill: $third-color;
+      animation: dialing 1s linear 0.3s infinite;
+    }
+  }
+  
+  
+}
+
+@media (hover:none) {
+  .nav__link {
+    &:active {
+      color: transparent;
+    }
+    &:active::after {
+      width: 100%;
+    }
+  }
+
+  .header__phone-number {
+    .header__phone:active & {
+      color: transparent;
+    }
+  
+    .header__phone:active &::after {
+      width: 100%;
+    }
+  }
+
+  .header__phone-svg {
+    .header__phone:active & {
+      fill: $third-color;
+      animation: dialing 1s linear 0.3s infinite;
+    }
+  }
+
+  .header__social-svg {
+    .header__social-link:active & {
+      fill: $third-color;
+      animation: dialing 1s linear 0.3s infinite;
+    }
+  }
 }
 
 @media (max-width: 1200px) {

@@ -1,7 +1,7 @@
 
 
 // breakpoint where swiper will be destroyed
-const breakpoint = window.matchMedia( '(max-width:376px)' );
+const breakpoint = window.matchMedia( '(max-width:480px)' );
 
 // keep track of swiper instances to destroy later
 let menuSlider;
