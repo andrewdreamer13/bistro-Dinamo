@@ -1,1 +1,0 @@
-export const mainPage = document.querySelector('.index-html');
