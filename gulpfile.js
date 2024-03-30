@@ -41,19 +41,19 @@ let isProd = false; // dev by default
 // пути от изначальных файлов к файлам назначения
 const paths = {
   html: {
-    // src: 'src/**/index.html',
+    src: 'src/html/index.html',
     // src: 'src/*.html',
-    src: 'src/html/**/*.html',
+    // src: 'src/html/**/*.html',
     dest: 'dist'
   },
   styles: {
-    // src: 'src/styles/style.scss',
-    src: 'src/styles/**/*.scss',
+    src: 'src/styles/style.scss',
+    // src: 'src/styles/**/*.scss',
     dest: 'dist/css/'
   },
   scripts: {
-    //src: 'src/scripts/main.js',
-    src: 'src/scripts/**/*.js',
+    src: 'src/scripts/main.js',
+    // src: 'src/scripts/**/*.js',
     dest: 'dist/js/'
   },
   libs: {
